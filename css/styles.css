@@ -8,7 +8,7 @@
   --dark-bg-color: #2f303a;
   --hero-title-color: #ffffff;
   --hero-bg-color: rgba(47, 48, 58, 0.4);
-  --hero-bg-btn-color: #188CE8;
+  --hero-bg-btn-color: #188ce8;
   --btn-text-color: #ffffff;
   --btn-bg-color: #f5f4fa;
   --feature-title-color: #212121;
@@ -17,9 +17,10 @@
   --footer-addr-color: #ffffff;
   --footer-tel-color: rgba(255, 255, 255, 0.6);
   --border-color: #eeeeee;
-  --logo-color: #AFB1B8;
+  --logo-color: #afb1b8;
   --join-bg-color: rgba(255, 255, 255, 0.1);
   --modal-color: #ffffff;
+  --close-btn-close: #000000;
   --time: 250ms;
   --function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -158,7 +159,7 @@ img {
   transition: color var(--time) var(--function);
 
   display: flex;
-  align-items:center;
+  align-items: center;
 
   padding-top: 32px;
   padding-bottom: 32px;
@@ -180,7 +181,7 @@ img {
 
 .ico-tel {
   margin-right: 10px;
- }
+}
 
 /* ---------------------HERO--------------------- */
 
@@ -216,7 +217,7 @@ img {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  
+
   display: inline-block;
   padding: 10px 32px;
   min-width: 200px;
@@ -332,7 +333,7 @@ img {
   bottom: 0;
   width: 100%;
   height: 70px;
-  background-color: rgba(47, 48, 58, 0.8);;
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 .work-text {
@@ -341,7 +342,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--main-bg-color)
+  color: var(--main-bg-color);
 }
 
 /* ---------------------TEAM--------------------- */
@@ -356,9 +357,7 @@ img {
 
   border-radius: 0px 0px 4px 4px;
 
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-  0px 1px 1px rgba(0, 0, 0, 0.14),
-  0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team-list .item + .item {
@@ -404,13 +403,13 @@ img {
   align-items: center;
 }
 
-.team-soc-item+.team-soc-item {
+.team-soc-item + .team-soc-item {
   margin-left: 10px;
 }
 
 .team-soc-link {
   transition: fill var(--time) var(--function), background-color var(--time) var(--function);
-  
+
   width: 44px;
   height: 44px;
   background-color: var(--team-card-color);
@@ -427,7 +426,6 @@ img {
   fill: var(--team-card-color);
 }
 
-
 /* ---------------------CLIENTS--------------------- */
 
 .clients-list {
@@ -438,7 +436,7 @@ img {
 
 .client-link {
   transition: border var(--time) var(--function), fill var(--time) var(--function);
-  
+
   display: block;
   width: 170px;
   height: 92px;
@@ -448,7 +446,7 @@ img {
   fill: var(--logo-color);
 }
 
-.client-item+.client-item {
+.client-item + .client-item {
   margin-left: 30px;
 }
 
@@ -499,7 +497,7 @@ img {
 
 .footer-tel {
   transition: color var(--time) var(--function);
-  
+
   margin-top: 9px;
 
   display: block;
@@ -522,14 +520,14 @@ img {
 }
 
 .footer-join {
-    margin-top: 0;
-    margin-bottom: 20px;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-  
-    color: var(--footer-addr-color);
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--footer-addr-color);
 }
 
 .join-soc-list {
@@ -538,14 +536,13 @@ img {
   align-items: center;
 }
 
-
-.join-soc-item+.join-soc-item {
+.join-soc-item + .join-soc-item {
   margin-left: 10px;
 }
 
 .join-soc-link {
   transition: background-color var(--time) var(--function);
-  
+
   width: 44px;
   height: 44px;
   background-color: var(--join-bg-color);
@@ -575,8 +572,9 @@ img {
 }
 
 .filter-item .btn {
-  transition: color var(--time) var(--function), background-color var(--time) var(--function), box-shadow var(--time) var(--function);
-  
+  transition: color var(--time) var(--function), background-color var(--time) var(--function),
+    box-shadow var(--time) var(--function);
+
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -601,9 +599,7 @@ img {
 .filter-item .btn.current {
   color: var(--btn-text-color);
   background-color: var(--accent-color);
-  box-shadow: 0px 3px 1px 0 rgba(0, 0, 0, 0.1),
-  0px 1px 2px 0 rgba(0, 0, 0, 0.08),
-  0px 2px 2px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px 0 rgba(0, 0, 0, 0.1), 0px 1px 2px 0 rgba(0, 0, 0, 0.08), 0px 2px 2px 0 rgba(0, 0, 0, 0.12);
 }
 
 .projects {
@@ -642,7 +638,7 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
-  
+
   transform: translateY(101%);
   transition: transform var(--time) var(--function);
 }
@@ -677,9 +673,7 @@ img {
 }
 
 .project-item:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-  0px 4px 4px rgba(0, 0, 0, 0.06),
-  1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-item:hover .project-overlay {
@@ -696,8 +690,7 @@ img {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   visibility: visible;
-  transition: opacity var(--time) var(--function), 
-  visibility var(--time) var(--function);
+  transition: opacity var(--time) var(--function), visibility var(--time) var(--function);
 }
 
 .backdrop.is-hidden {
@@ -718,12 +711,10 @@ img {
   min-width: 528px;
   min-height: 581px;
   background-color: var(--modal-color);
-  
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-  0px 1px 1px rgba(0, 0, 0, 0.14),
-  0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  
+
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--time) var(--function);
 }
@@ -741,5 +732,11 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  fill: var(--close-btn-close);
+  background-color: transparent;
+  transition: fill var(--time) var(--function);
 }
 
+.modal-close-btn:hover {
+  fill: var(--accent-color);
+}
