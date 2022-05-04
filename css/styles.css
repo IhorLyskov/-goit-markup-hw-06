@@ -738,6 +738,11 @@ img {
   transition: fill var(--time) var(--function);
 }
 
+.modal-close-btn:focus {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
 .modal-close-btn:hover {
   fill: var(--accent-color);
 }
@@ -831,35 +836,65 @@ input.modal-form-input:focus {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-agreement {
+.agreement {
   position: relative;
   display: flex;
   align-items: center;
+
   margin-top: 20px;
 }
 
-.modal-agreement-ico {
-  left: 13px;
+.agreement-checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.agreement-icon {
+  position: relative;
+  width: 16px;
   height: 15px;
-  /* margin-left: 13px; */
+
+  margin-left: 13px;
   margin-right: 7px;
+
+  border: 2px solid var(--title-color);
+  border-radius: 2px;
+
+  transition: border-color var(--time) var(--function);
 }
 
-.ico-unchecked {
-  opacity: 0.5;
-}
-.ico-checked {
-  opacity: 0.5;
-}
-
-.modal-form-agreement {
-  appearance: none;
-
-  /* margin: 0 7px 0 13px; */
-  margin: 0;
+.agreement-svg {
+  position: absolute;
+  top: -3px;
+  /* transform: translate(-2px -2px); */
+  opacity: 0;
+  transition: opacity var(--time) var(--function);
 }
 
-.modal-form-agreement-label {
+.agreement-checkbox:checked + .agreement-icon {
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+}
+
+.agreement-checkbox:active + .agreement-icon {
+  box-shadow: 0 0 0 2px red;
+}
+
+.agreement-checkbox:focus + .agreement-icon {
+  box-shadow: 0 0 0 2px var(--modal-color), 0 0 0 3px var(--accent-color);
+}
+
+.agreement-checkbox:checked + .agreement-icon > .agreement-svg {
+  opacity: 1;
+}
+
+.agreement-label {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -867,8 +902,9 @@ input.modal-form-input:focus {
   color: var(--main-color);
 }
 
-.modal-agreement-link {
+.agreement-link {
   color: var(--accent-color);
+  outline-color: var(--accent-color);
 }
 
 .modal-btn {
@@ -900,5 +936,7 @@ input.modal-form-input:focus {
   cursor: pointer;
 }
 
-/* .modal-agreement-ico:active {
-} */
+.modal-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--modal-color), 0 0 0 3px var(--accent-color);
+}

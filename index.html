@@ -403,7 +403,7 @@
 
         <form class="modal-form js-modal-form">
           <div class="modal-form-field">
-            <label for="name">Имя</label>
+            <label for="name">Имя *</label>
             <div class="modal-form-input-and-icon">
               <input class="modal-form-input" type="text" name="name" id="name" autofocus />
               <span class="modal-form-icon">
@@ -415,7 +415,7 @@
           </div>
 
           <div class="modal-form-field">
-            <label for="phone">Телефон</label>
+            <label for="phone">Телефон *</label>
             <div class="modal-form-input-and-icon">
               <input class="modal-form-input" type="tel" name="phone" id="phone" />
               <span class="modal-form-icon">
@@ -443,27 +443,22 @@
             <textarea class="modal-form-comment" name="comment" id="comment" placeholder="Введите текст"></textarea>
           </div>
 
-          <div class="modal-agreement">
-            <div class="modal-agreement-ico ico-unchecked">
-              <svg width="16" height="15">
-                <use href="./images/icons.svg#icon-checkbox-unchecked"></use>
-              </svg>
-            </div>
-            <div class="modal-agreement-ico ico-checked">
-              <svg width="16" height="15">
-                <use href="./images/icons.svg#icon-checkbox-checked"></use>
-              </svg>
-            </div>
-            <input class="modal-form-agreement" type="checkbox" name="agreement" id="agreement" value="yes" />
-            <label for="agreement"
-              ><span class="modal-form-agreement-label"
-                >Соглашаюсь с рассылкой и принимаю
-                <a href="" target="_blank" rel="noopener noreferrer nofollow" class="modal-agreement-link">
-                  Условия договора
-                </a>
-              </span>
-            </label>
-          </div>
+          <label class="agreement">
+            <input class="agreement-checkbox" type="checkbox" name="agreement" value="yes" />
+            <span class="agreement-icon">
+              <div class="agreement-svg">
+                <svg width="13" height="10">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </div>
+            </span>
+            <span class="agreement-label"
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="" target="_blank" rel="noopener noreferrer nofollow" class="agreement-link">
+                Условия договора
+              </a></span
+            >
+          </label>
 
           <button type="submit" class="modal-btn" js-modal-form>Отправить</button>
         </form>
