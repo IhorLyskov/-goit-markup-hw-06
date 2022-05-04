@@ -832,15 +832,31 @@ input.modal-form-input:focus {
 }
 
 .modal-agreement {
+  position: relative;
   display: flex;
   align-items: center;
   margin-top: 20px;
 }
 
-.modal-form-agreement {
-  /* appearance: none; */
+.modal-agreement-ico {
+  left: 13px;
+  height: 15px;
+  /* margin-left: 13px; */
+  margin-right: 7px;
+}
 
-  margin: 0 7px 0 13px;
+.ico-unchecked {
+  opacity: 0.5;
+}
+.ico-checked {
+  opacity: 0.5;
+}
+
+.modal-form-agreement {
+  appearance: none;
+
+  /* margin: 0 7px 0 13px; */
+  margin: 0;
 }
 
 .modal-form-agreement-label {
