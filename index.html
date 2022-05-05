@@ -346,46 +346,66 @@
 
     <footer class="footer">
       <div class="footer-data container">
-        <div class="footer-left">
-          <a href="" class="webstudio-footer link"><span class="webstudio-accent">Web</span>Studio</a>
-          <address>
-            <p class="footer-address">г. Киев, пр-т Леси Украинки, 26</p>
-            <a class="footer-tel" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a class="footer-tel" href="tel:+380961111111">+38 096 111 11 11</a>
-          </address>
+        <div class="left-middle">
+          <div class="footer-left">
+            <a href="" class="webstudio-footer link"><span class="webstudio-accent">Web</span>Studio</a>
+            <address>
+              <p class="footer-address">г. Киев, пр-т Леси Украинки, 26</p>
+              <a class="footer-tel" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <a class="footer-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+            </address>
+          </div>
+
+          <div class="footer-middle">
+            <h2 class="footer-title">присоединяйтесь</h2>
+            <ul class="join-soc-list list">
+              <li class="join-soc-item">
+                <a href="" target="_blank" rel="noopener noreferrer nofollow" class="join-soc-link">
+                  <svg class="join-soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join-soc-item">
+                <a href="" target="_blank" rel="noopener noreferrer nofollow" class="join-soc-link">
+                  <svg class="join-soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join-soc-item">
+                <a href="" target="_blank" rel="noopener noreferrer nofollow" class="join-soc-link">
+                  <svg class="join-soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join-soc-item">
+                <a href="" target="_blank" rel="noopener noreferrer nofollow" class="join-soc-link">
+                  <svg class="join-soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+
         <div class="footer-right">
-          <h2 class="footer-join">присоединяйтесь</h2>
-          <ul class="join-soc-list list">
-            <li class="join-soc-item">
-              <a href="" target="_blank" rel="noopener noreferrer nofollow" class="join-soc-link">
-                <svg class="join-soc-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join-soc-item">
-              <a href="" target="_blank" rel="noopener noreferrer nofollow" class="join-soc-link">
-                <svg class="join-soc-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join-soc-item">
-              <a href="" target="_blank" rel="noopener noreferrer nofollow" class="join-soc-link">
-                <svg class="join-soc-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join-soc-item">
-              <a href="" target="_blank" rel="noopener noreferrer nofollow" class="join-soc-link">
-                <svg class="join-soc-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          <h2 class="footer-title">Подпишитесь на рассылку</h2>
+          <form class="mailing-form js-modal-form">
+            <input class="mailing-form-input" type="email" name="mailing" placeholder="E-mail" autocomplete />
+            <button type="submit" class="modal-btn">
+              <span class="mailing-key">
+                <span>Подписаться</span>
+                <span class="mailing-ico">
+                  <svg width="24" height="24">
+                    <use href="./images/icons.svg#icon-send"></use>
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
@@ -405,7 +425,7 @@
           <div class="modal-form-field">
             <label for="name">Имя *</label>
             <div class="modal-form-input-and-icon">
-              <input class="modal-form-input" type="text" name="name" id="name" autofocus />
+              <input class="modal-form-input" type="text" name="name" id="name" autofocus required />
               <span class="modal-form-icon">
                 <svg width="18" height="18">
                   <use href="./images/icons.svg#icon-person"></use>
@@ -417,7 +437,7 @@
           <div class="modal-form-field">
             <label for="phone">Телефон *</label>
             <div class="modal-form-input-and-icon">
-              <input class="modal-form-input" type="tel" name="phone" id="phone" />
+              <input class="modal-form-input" type="tel" name="phone" id="phone" required />
               <span class="modal-form-icon">
                 <svg width="18" height="18">
                   <use href="./images/icons.svg#icon-phone"></use>
@@ -460,7 +480,7 @@
             >
           </label>
 
-          <button type="submit" class="modal-btn" js-modal-form>Отправить</button>
+          <button type="submit" class="modal-btn btn-margin" js-modal-form>Отправить</button>
         </form>
       </div>
     </div>

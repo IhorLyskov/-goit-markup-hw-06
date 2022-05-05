@@ -469,6 +469,10 @@ img {
 
 .footer-data {
   display: flex;
+  justify-content: space-between;
+}
+.left-middle {
+  display: flex;
 }
 
 .footer-left {
@@ -516,11 +520,11 @@ img {
   color: var(--accent-color);
 }
 
-.footer-right {
+.footer-middle {
   margin-top: 12px;
 }
 
-.footer-join {
+.footer-title {
   margin-top: 0;
   margin-bottom: 20px;
   font-size: 14px;
@@ -533,7 +537,7 @@ img {
 
 .join-soc-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -557,6 +561,43 @@ img {
 .join-soc-link:hover,
 .join-soc-link:focus {
   background-color: var(--accent-color);
+}
+
+.footer-right {
+  margin-top: 12px;
+  height: 86px;
+}
+
+.mailing-form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.mailing-form-input {
+  width: 358px;
+  height: 50px;
+
+  margin: 0 12px 0 0;
+  padding: 15px 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  color: var(--btn-text-color);
+  font: inherit;
+}
+
+.mayling-form-input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  display: flex;
+  align-items: center;
+
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /* ---------------------PORTFOLIO--------------------- */
@@ -738,10 +779,10 @@ img {
   transition: fill var(--time) var(--function);
 }
 
-.modal-close-btn:focus {
+/* .modal-close-btn:focus {
   border-color: var(--accent-color);
   color: var(--accent-color);
-}
+} */
 
 .modal-close-btn:hover {
   fill: var(--accent-color);
@@ -793,6 +834,7 @@ img {
   border-radius: 4px;
 
   font: inherit;
+  transition: border-color var(--time) var(--function);
 }
 
 .modal-form-icon {
@@ -802,6 +844,7 @@ img {
   height: 18px;
 
   transform: translateY(-50%);
+  transition: fill var(--time) var(--function);
 }
 
 textarea.modal-form-comment:focus,
@@ -826,6 +869,7 @@ input.modal-form-input:focus {
   border-radius: 4px;
 
   resize: none;
+  transition: border-color var(--time) var(--function);
 }
 
 .modal-form-field textarea::placeholder {
@@ -872,7 +916,6 @@ input.modal-form-input:focus {
 .agreement-svg {
   position: absolute;
   top: -3px;
-  /* transform: translate(-2px -2px); */
   opacity: 0;
   transition: opacity var(--time) var(--function);
 }
@@ -880,10 +923,6 @@ input.modal-form-input:focus {
 .agreement-checkbox:checked + .agreement-icon {
   border-color: var(--accent-color);
   background-color: var(--accent-color);
-}
-
-.agreement-checkbox:active + .agreement-icon {
-  box-shadow: 0 0 0 2px red;
 }
 
 .agreement-checkbox:focus + .agreement-icon {
@@ -916,9 +955,6 @@ input.modal-form-input:focus {
   height: 50px;
   border: 0;
 
-  margin-top: 30px;
-  margin-left: 123px;
-
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 
@@ -936,7 +972,26 @@ input.modal-form-input:focus {
   cursor: pointer;
 }
 
-.modal-btn:focus {
+.btn-margin {
+  margin-top: 30px;
+  margin-left: 123px;
+}
+
+.mailing-key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mailing-ico {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 10px;
+}
+
+/* .modal-btn:focus {
   outline: none;
   box-shadow: 0 0 0 2px var(--modal-color), 0 0 0 3px var(--accent-color);
-}
+} */
